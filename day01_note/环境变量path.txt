@@ -1,0 +1,5 @@
+环境变量：
+其中的path：
+让操作系统，搜索像javac.exe等这样的工具的路径。
+
+path=D:\ProgramFiles\Java\jdk1.8.0_141\bin;其他路径

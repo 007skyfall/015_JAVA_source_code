@@ -1,0 +1,6 @@
+在JRE核心类库中有一个java.lang.Comparable接口，
+它有一个抽象方法int compareTo(Object obj)
+1、现在要声明一个Circle类，包含radius属性，请实现Comparable接口，按照半径比较大小
+
+2、在测试类TestComparable类中，创建Circle数组，并创建几个对象
+调用java.util.Arrays的sort方法进行排序

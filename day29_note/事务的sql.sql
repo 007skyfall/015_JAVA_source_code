@@ -1,0 +1,7 @@
+SET autocommit=FALSE;
+
+INSERT INTO USER VALUES('aa','345',NOW());
+
+COMMIT;#提交事务
+
+INSERT INTO USER VALUES('bb','567',NOW());

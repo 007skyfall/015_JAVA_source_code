@@ -1,0 +1,60 @@
+1、标识符命名规则和标识符命名规范（20分）
+标识符命名规则：
+（1）Java的标识符只能由26个英文字母大小写，数字0-9，下划线_，美元符号$
+（2）不能使用关键字、保留字、特殊值
+（3）不能有空格
+（4）严格区分大小写
+（5）数字不能开头
+标识符的命名规范：
+（1）见名知意
+（2）类名、接口名等类型名称：每一个单词首字母大写，形式：XxxYyyZzz，例如：String，System，HelloWorld等
+（3）变量名、方法名：从第二个单词开始，首字母大写，形式：xxxYyyZzz，例如：main,age,myAge等
+（4）包名：所有单词都小写，每个单词之间使用.，形式：xxx.yyy.zzz，例如：java.util,java.lang等
+（5）常量名：所有单词都大写，每一个单词之间使用_，形式：XXX_YYY_ZZZ，例如：MAX_VALUE等
+
+2、变量的三要素是什么？如何声明一个变量？使用一个变量应该注意什么？（20分）
+变量的作用：保存数据，值
+变量的三要素是：
+（1）数据类型
+（2）变量名
+（3）变量值
+
+如何声明一个变量？
+	数据类型  变量名;  //占用名称，并且确定类型
+
+使用一个变量应该注意:
+（1）先声明后使用
+（2）使用之前必须初始化
+（3）有作用域
+	
+		
+3、JDK、JRE、JVM分别代表什么，他们的关系是什么？（20分）
+JDK：Java开发工具集，Java Developer's Kit
+JRE：Java运行环境，Java Runtime Environment
+JVM：Java虚拟机，Java Virtual Machine
+关系：
+JDK = JRE + 开发工具（javac.exe等）
+JRE = JVM + 核心类库
+
+4、以下合法的变量有？（20分）
+static（关键字），week，2b（数字不能开头），r#b（#不是合法的字符），
+$egg，evenNum，i，sunday，java，main，String
+
+
+合法的变量有：week，$egg，evenNum，i，sunday，java，main
+但是：我不建议使用java，main，String，作为变量名、类名等标识符，因为他们比较特殊
+
+
+5、Java程序的开发步骤是什么？（20分）
+（1）编辑源代码
+要求：把源代码保存为.java的文件，建议类名和源文件名一致
+（2）编译源代码成字节码文件
+使用的工具：javac.exe
+命令的格式：javac 源文件名.java
+			javac 源文件路径/源文件名.java
+			javac -encoding 编码方法 源文件名.java
+（3）运行字节码文件
+运行的工具：java.exe
+命令的格式：java 类名
+说明：这个类名其实就是字节码文件的名称，并且这个类必须包含main方法才能运行。
+

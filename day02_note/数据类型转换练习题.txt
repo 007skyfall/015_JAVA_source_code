@@ -1,0 +1,24 @@
+1、判断是否可以编译通过，如果可以，结果是多少，不通过，是为什么
+short s1 = 25;
+short s2 = 34;
+short s3 = s1 + s2;
+
+2、判断是否可以编译通过，如果可以，结果是多少，不通过，是为什么
+char c1 = '0';
+char c2 = '1';
+char c3 = c1 + c2;
+
+3、判断是否可以编译通过，如果可以，结果是多少，不通过，是为什么
+int x = 1;
+int y = 2;
+System.out.println("x + y" + x + y);
+System.out.println("x - y" + x - y);
+System.out.println("x * y" + x * y);
+System.out.println("x / y" + x / y);
+
+4、判断是否可以编译通过，如果可以，结果是多少，不通过，是为什么
+int a = 3;
+float f = 4.5;
+long num = 478;
+double d = 35.7;
+System.out.println(a + f + num + d);

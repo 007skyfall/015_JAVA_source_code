@@ -1,0 +1,10 @@
+1、exception
+2、error
+3、throwable
+4、try
+5、catch
+6、finally
+7、throw
+8、NullPointerException
+9、ArrayIndexOutOfBoundsException
+10、ClassCastException

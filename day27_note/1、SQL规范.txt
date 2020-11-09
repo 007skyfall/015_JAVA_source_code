@@ -1,0 +1,57 @@
+一、SQL：Structure Query Language结构化查询语言
+1、DDL：（Data Definition Languages)：数据定义语言
+包括：建库、建表、修改表结构等
+主要关键字：create,drop,alter等
+
+2、DML：（Data Manipulation Language）：数据操作语句
+包括：增、删、改、查
+主要关键字：insert,delete,update,select
+
+3、DCL（Data Control Language）：数据控制语句
+包括：grant、revoke、transaction
+
+二、语法规则
+1、mysql对于SQL语句不区分大小写，SQL语句关键字尽量大写
+create database java1111;
+insert into stu values(1,'zhangsan',45);
+
+2、值，除了数值型，字符串型和日期时间类型使用单引号（''）
+
+3、字段别名，尽量使用双引号（""），特别是别名中间有空格，而且不建议省略as
+
+4、所有标点符号使用英文状态下的半角输入方式
+
+5、必须保证所有(),单引号，双引号是成对结束的
+insert into stu values(2,'李四,'男');
+
+6、可以使用（1）#单行注释 （2）--空格单行注释 （3）/*  多行注释  */
+
+#插入语句练习
+insert into stu values(2,'zhangsan','女');
+
+-- 删除数据
+
+三、命名规则
+1、数据库、表名不得超过30个字符，变量名限制为29个
+
+2、必须只能包含 A–Z, a–z, 0–9, _共63个字符
+
+3、不能在对象名的字符间留空格
+
+4、必须不能和用户定义的其他对象重名
+不同的数据库下，表格是否可以重名
+不同的表格下，字段是否可以重名
+
+5、必须保证你的字段没有和保留字、数据库系统或常用方法冲突
+
+6、保持字段名和类型的一致性,在命名字段并为其指定数据类型的时候一定要保证一致性。
+假如数据类型在一个表里是整数,那在另一个表里可就别变成字符型了，就不合适
+一张表格是部门表：did是int
+did  dname
+1     财务部
+另一张表格是员工表：deptno是字符串，不合适
+eid ename deptno   
+1   张三   1
+
+
+

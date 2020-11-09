@@ -1,0 +1,31 @@
+一、练习1
+1、声明一个接口Speakable，包含抽象方法void speak()
+2、在测试类中，创建一个Speakable数组，长度为5，
+每一个元素用一个Speakable的匿名内部类的实现类对象赋值，
+（1）第一个：打印“叽里呱啦”
+（2）第二个：打印“叽叽喳喳”
+（3）第三个：打印“嗯嗯啊啊”
+（4）第四个：打印“见人说人话，见鬼说鬼话”
+（5）第五个：打印“真心话”
+3、遍历数组，每一个元素调用speak()
+
+
+二、练习2
+1、请在main中，创建一个Object的子类对象，
+通过匿名内部类方式实现，并在匿名内部类中声明public void method(){}方法，
+并调用该方法
+
+
+三、练习3
+1、声明一个抽象类：Graphic图形类，
+包含一个属性：name
+包含一个抽象方法：public abstract double getArea();
+
+2、声明一个它的子类：矩形类，继承Graphic图形类，有属性长、宽，实现抽象方法
+3、在测试类TestGraphic中，声明一个方法
+public static void printArea(Graphic g){}方法，打印图形的名称和面积
+4、在测试类TestGraphic的main中，调用两次printArea()，
+一次传矩形对象，一次传用匿名内部类实现Graphic的圆对象（包含属性半径，实现抽象方法）
+5、在测试类TestGraphic的main中创建一个Graphic数组，长度为3，
+赋值为3个矩形对象，调用Arrays.sort(数组，Comparator)的方法排序，遍历显示排序前后的结果
+

@@ -1,0 +1,25 @@
+1、Apache公司在编写Tomcat服务器软件时，在它的编译时，无法知道我们将来会写一个什么类，
+例如：com.atguigu.servlet.DengLuServlet
+但是它要在它的内部写好一个功能（方法）：创建DengLuServlet的对象，并且调用doGet()等方法，
+一旦用户访问这个服务器，就可以调用这个方法
+
+2、约定，咱们如果写了类，在web.xml中配置一下这个包.类名
+  <servlet>
+    <servlet-name>DengLuServlet</servlet-name>
+    <servlet-class>com.atguigu.servlet.DengLuServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DengLuServlet</servlet-name>
+    <url-pattern>/aa</url-pattern>
+  </servlet-mapping>
+
+3、等你访问服务器用：http://localhost:8080/java1111/aa 
+
+它就知道要创建com.atguigu.servlet.DengLuServlet类对象
+
+步骤：
+（1）先获取com.atguigu.servlet.DengLuServlet的Class对象
+Class clazz = Class.forName("com.atguigu.servlet.DengLuServlet");
+
+（2）创建com.atguigu.servlet.DengLuServlet的对象
+Object obj = clazz.newInstance();

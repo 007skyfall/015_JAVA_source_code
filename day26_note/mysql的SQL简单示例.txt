@@ -1,0 +1,41 @@
+sql的小样例：
+1、查看当前用户可以看到的所有的数据库
+show databases;
+
+SHOW DATABASES;
+
+2、建立数据库
+create database 数据库名;
+create database java1111;
+
+3、查看数据库中的表格
+show tables from 数据库名;
+
+use 数据库名;  #如果有了这句，接下来的所有的Sql就可以不用再指定数据库了。
+show tables;
+
+4、创建表格
+create table stu(sid int,sname varchar(20),gender char);
+
+5、查看数据
+select * from 表格;
+
+select * from stu;
+
+6、插入数据
+insert into 表格 values(值列表);
+
+insert into stu values(1,'张三','男');
+
+
+mysql> insert into stu values(1,'张三','男');
+ERROR 1366 (HY000): Incorrect string value: '\xD5\xC5\xC8\xFD' for column 'sname' at row 1
+编码的问题：
+
+SHOW VARIABLES LIKE 'character_set_%';
+show variables like 'character_set_%';
+set names gbk;   设置客户端的字符编码为gbk，这句话只对一次连接有用。
+
+其他它改的是两个变量的值：
+character_set_client     | gbk
+character_set_connection | gbk

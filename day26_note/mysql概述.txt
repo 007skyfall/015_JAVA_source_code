@@ -1,0 +1,50 @@
+1、为什么要用数据库（Database）？
+（1）数据要持久化（从内存中把数据永久的保存到文件中）
+（2）有结构的管理我们的数据：方便我们检索，查询等操作
+
+2、几个名词：
+DBMS：Database ManageMent System 数据库管理系统
+DB：Database  数据库
+SQL：Structe Query Language结构化查询语言
+
+DBMS是管理DB，像我们说的MySQL，Oracle，SQL Server,Redis，....这些都是DBMS。
+SQL是一种语言，我们程序员或DBA（数据库管理员）和DBMS交互的语言。
+
+3、MySQL
+（1）免费
+（2）开源
+（3）轻量级
+（4）性能
+
+MySQL是一款关系型数据库。内部的数据以二维表格存储。有行和列组成。
+
+一个DBMS中会有很多个DB数据库，
+一个DB中会有很多张表格table，
+一个表格中会有很多行和列，把每一列称为一个字段，列名称为也称为字段名，每一行称为一条记录。
+
+
+ORmapping：Object RelationShip mapping，对象与关系型数据库的映射
+表->类
+记录->对象
+字段->属性
+ORmapping的框架：hibernate,mybatis等
+
+4、数据库
+数据库分为服务器端和客户端
+我们安装和使用的MySQL是服务器端，服务器端就会有一个服务
+
+
+回忆：网络编程，TCP服务器端程序时，第一步，开启服务ServerSocket
+
+5、mysql卸载
+（1）检查mysql的服务是否开启，如果开启，最后先关闭
+“我的电脑”->右键->"管理"->"服务"->找到mysql-->停止
+
+（2）卸载
+控制面板
+电脑管家等
+
+（3）清理
+my.ini等
+
+（4）清理注册表（一般不需要）

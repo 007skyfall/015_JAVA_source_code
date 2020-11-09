@@ -1,0 +1,8 @@
+一、练习题1
+1、声明一个父类：员工类Employee类，有属性：姓名name，薪资salary
+2、声明一个子类：经理类Manager类，增加属性：奖金bonus
+3、分别定义getInfo（）
+4、在测试类TestEmployeeManager类的main中
+（1）创建父类对象，调用getInfo（）
+（2）创建子类对象，调用getInfo（）
+

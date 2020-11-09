@@ -1,0 +1,38 @@
+一、JDK、JRE、JVM
+JDK：Java Developer's Kit Java开发工具包
+JRE：Java Runtime Environment Java运行时环境
+JVM：Java Virtual Machine  Java虚拟机
+
+JRE = JVM + 核心类库
+其实运行Java程序，你只要安装JRE就够了。
+
+JDK：JRE + 开发工具
+如果你的机器是开发机器，那么需要装JDK。
+换句话说，装了JDK，就不用在装JRE
+
+开发工具:
+编译工具：javac.exe
+运行工具：java.exe
+打包工具：jar.exe
+文档工具：javadoc.exe
+....
+
+二、下载和安装JDK
+1、www.oracle.com
+2、下载对应操作系统的JDK
+windows为例：
+64位：可以装64和32，但是建议装64
+32位：只能装32
+【计算机/我的电脑】右键-->属性-->操作系统类型
+
+这里顺便说明一下，JDK是32，那么后面eclipse等也选32，不然会失败。
+
+3、安装
+（1）避免中文目录（文件夹）和空格
+（2）安装：注意选择目录和选择安装的组件
+
+三、卸载
+1、卸载软件
+建议用“控制面板”或“电脑管家”或“程序本身自带的卸载程序”
+2、如果有环境变量的，删除旧的环境变量
+

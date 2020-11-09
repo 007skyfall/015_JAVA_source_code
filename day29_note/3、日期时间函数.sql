@@ -1,0 +1,25 @@
+/*
+日期时间函数
+*/
+SELECT NOW(),CURDATE(),CURTIME()
+
+INSERT INTO `user` VALUES('chai','123',NOW())
+UPDATE `user` SET lastlogin  = NOW() WHERE username ='chai';
+
+SELECT YEAR(NOW()),MONTH(NOW()),DAY(NOW()),HOUR(NOW()),MINUTE(NOW()),SECOND(NOW())
+
+#WEEKDAY,周一是0，DAYOFWEEK，周日是1，周一是2
+SELECT WEEK(NOW()),WEEKDAY('2018-12-17'),DAYOFWEEK(NOW()),DAYNAME(NOW())
+
+#计算今天和元旦的时间间隔
+SELECT DATEDIFF('2019-01-01',NOW());
+#计算现在的时间与中午的间隔
+SELECT TIMEDIFF(STR_TO_DATE('12:00:00','%H:%i:%S'),CURTIME());
+
+SELECT STR_TO_DATE('2019年1月3','%Y年%c月%e')
+SELECT DATE_FORMAT(CURDATE(),'%Y年%c月%e');
+
+#今天再过20天是什么日期
+SELECT DATE_ADD(NOW(),INTERVAL 20 DAY);
+
+
